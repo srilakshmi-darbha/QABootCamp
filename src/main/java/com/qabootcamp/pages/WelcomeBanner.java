@@ -17,12 +17,12 @@ public class WelcomeBanner extends BasePage{
     public WelcomeBanner(){
         super();
         driver = BasePage.getDriver();
-        driver.getTitle();
     }
 
 
 
     public void clickOnDismiss(){
+        System.out.println(this.dismissBtn);
         this.dismissBtn.click();
     }
 }

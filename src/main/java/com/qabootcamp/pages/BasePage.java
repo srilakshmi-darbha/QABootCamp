@@ -2,7 +2,7 @@ package com.qabootcamp.pages;
 
 import com.qabootcamp.constants.FrameworkConstants;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -18,8 +18,9 @@ public class BasePage {
     }
 
     public void createDriver(){
-        System.setProperty("webdriver.chrome.driver", FrameworkConstants.getDriverPath());
-        driver = new ChromeDriver();
+        //System.setProperty("webdriver.chrome.driver", FrameworkConstants.getDriverPath());
+        //driver = new ChromeDriver();
+        driver = new HtmlUnitDriver();
         wait = new WebDriverWait(driver, FrameworkConstants.driverWait);
     }
 
