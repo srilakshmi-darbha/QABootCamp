@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test thread-count="1" verbose="2" preserve-order="true" name="/Users/ishaanmadaan/qabootcamp/QaBootcampUITestFramework">
         <classes>
-            <class name="com.qaBootcamp.tests.LoginPageTests">
+            <class name="com.qaBootcamp.tests.LoginPageTest">
             </class>
         </classes>
     </test>

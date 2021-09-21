@@ -1,7 +1,7 @@
 import com.qabootcamp.pages.WelcomeBanner;
 import org.testng.annotations.Test;
 
-public class LoginPageTests extends BaseTest {
+public class LoginPageTest extends BaseTest {
 
     @Test
     public void registerUser() {
