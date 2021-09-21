@@ -1,4 +1,11 @@
 package com.qabootcamp.pages;
 
-public class LoginPage {
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage extends BasePage{
+    public LoginPage(){
+        super();
+        driver.getTitle();
+
+    }
 }

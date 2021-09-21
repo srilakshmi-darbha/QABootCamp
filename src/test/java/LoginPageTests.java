@@ -1,4 +1,5 @@
 import com.qabootcamp.constants.FrameworkConstants;
+import com.qabootcamp.pages.WelcomeBanner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,10 @@ import org.testng.annotations.Test;
 
 public class LoginPageTests extends BaseTest{
 
-
+      @Test
+       public void registerUser(){
+          WelcomeBanner wb = new WelcomeBanner();
+          wb.clickOnDismiss();
+      }
 
 }

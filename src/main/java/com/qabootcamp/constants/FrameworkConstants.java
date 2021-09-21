@@ -4,4 +4,6 @@ public class FrameworkConstants {
     public static String getDriverPath() {
         return System.getProperty("user.dir") + "/src/test/resources/executables/chromedriver";
     }
+
+    public static int driverWait = 60;
 }
