@@ -14,7 +14,10 @@ public class BaseTest extends BasePage {
     @BeforeMethod
     public void setup() throws Exception {
         getDriver();
-        driver.get(ReadPropertyFile.getProperty("url"));
+        System.out.println(System.getenv());
+        String url = "http://"+System.getenv("host")+":3000";
+        System.out.println(url);
+        driver.get(url);
 
     }
     @AfterMethod
